@@ -113,3 +113,36 @@ html{
   vertical-align: top; /*pulls up .fittins and .delivery to same level as
   .exams img is*/
 }
+
+/*philosophy and appointments squares*/
+.banners{
+  margin-top: 3rem;
+  background-color:white;
+  text-align: center;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.philosophy,
+.appointments{
+  display:inline-flex;
+  width: 35%;
+  flex-direction: column;
+  text-align: left;
+}
+
+.banners p{
+  color:black;
+}
+
+.appointments p {
+  margin-left:5%;
+}
+
+#square{
+  width: 10rem;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 0.5rem;
+}
