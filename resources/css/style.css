@@ -73,3 +73,43 @@ html{
   right: -2rem;
   z-index: 3;
 }
+
+/*icons + paragraphs section (services)*/
+.services{
+  display: flex;
+  height:8rem;
+  color: gray;
+  min-width:100%;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.exams img{
+  max-width: 3.5rem;
+  height: auto;
+  margin:0 auto; /*centers the ruler icon within .exams*/
+}
+
+.fittings img,
+.delivery img{
+  max-width: 5rem;
+  height: auto;
+}
+
+.exams,
+.fittings,
+.delivery{
+  min-height: 8rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 3rem 3rem 3rem;
+}
+
+.fittings,
+.delivery{
+  vertical-align: top; /*pulls up .fittins and .delivery to same level as
+  .exams img is*/
+}
