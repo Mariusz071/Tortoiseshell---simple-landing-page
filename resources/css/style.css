@@ -44,6 +44,11 @@ html{
 /*navbar section within header*/
 .navbar{
   display:inline-flex;
+  align-items: center;
+}
+
+.navbar p{
+  display: hidden;
 }
 
 .navbar a{
@@ -152,6 +157,7 @@ html{
   display:flex;
   background-color: azure;
   color: grey;
+  margin-top: 5rem;
 }
 
 .footer img,
@@ -167,4 +173,105 @@ html{
 
 .footer p{
   align-items: center;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*Tablet - portrait*/
+@media only screen and (max-width: 768px){
+  .container{
+    width: 100%;
+  }
+
+  .main{
+    padding-top:0;
+    height: 22rem;
+    background-position: 40% 0;
+  }
+
+  .whitebanner{
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
+    margin-right: 4rem;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px){
+
+ .logo p{
+  display: none;
+ }
+
+ .navbar li{
+   display: none;
+ }
+
+ .navbar p{
+   display: inline-block;
+ }
+
+ .main{
+   height: 17rem;
+   background-position: 30% 0%;
+   margin-bottom: 0;
+ }
+
+ .whitebanner{
+   width: 100%;
+   font-size: 1rem;
+   margin: 9rem 2rem 0 0;
+   padding: 1rem 0;
+   justify-content: center;
+ }
+
+
+.services{
+  font-size: 0.77rem;
+  flex-direction: column;
+  height: auto; /*fixing banners appearing on the top of services*/
+  padding: 3.77rem 0;
+
+}
+
+.services img,
+.exams,
+.delivery{
+  margin: 0 auto;
+}
+
+.exams,
+.delivery,
+.fittings{
+  min-width: 100%;
+}
+
+.fittings{
+ margin: 1.54rem auto;
+}
+
+.banners{
+  display: block;
+  min-width: 100%;
+  margin-top: 0;
+}
+
+.philosophy,
+.appointments{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#square{
+  min-width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.banners p{
+  margin:0 0 4rem 0;
+}
+
 }
